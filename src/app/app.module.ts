@@ -9,15 +9,23 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
 
-import { AppComponent } from './app.component';
-import { RandomQuoteComponent } from './random-quote.component';
+import { AppComponent } from './components/app.component';
+import { RandomQuoteComponent } from './components/random-quote/random-quote.component';
 
-import { QuoteService } from './quote.service';
+import { QuoteService } from './services/quote.service';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavComponent } from './components/nav/nav.component';
+import { AsideComponent } from './components/aside/aside.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RandomQuoteComponent
+    RandomQuoteComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,
