@@ -1,0 +1,14 @@
+<div fxLayout="column" fxLayoutAlign="center stretch">
+  <div fxFlex="200px" class=".padding-sides-10">
+    <md-card>
+      <md-card-content>
+        <p>{{ quote.quoteText }}</p>
+        <p>-- {{ quote.quoteAuthor ? quote.quoteAuthor : 'Unknown author' }}</p>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div fxFlex fxFlexAlign="center">
+    <button (click)="getQuote()" md-raised-button>Another quote!</button>
+    <button  md-raised-button>Tweet quote!</button>
+  </div>
+</div>

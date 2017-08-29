@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div 
+fxLayout="column"
+fxLayoutAlign="start none" 
+style="flex: 1 1 100%;min-height:100vh;">
+
+<header 
+  class="flex-container"
+  fxLayout="row"
+  fxLayoutAlign="center center">
+  <div fxFlex class="margin-bottom-10">
+    <app-header></app-header>
+  </div>
+</header>
+
+<div class="flex-container" fxFlex fxFlexFill>
+  <div 
+    fxLayout="row"
+    fxLayout.xs="column"
+    class="colored" >
+    <div fxFlex="20" class="padding-sides-10">
+        <app-nav></app-nav>
+    </div>
+    <div fxFlex="60">
+      <app-randomquote></app-randomquote>
+    </div>
+    <div fxFlex class="padding-sides-10">
+      <app-aside></app-aside>
+    </div>
+  </div>
+</div>
+<footer 
+  class="flex-container"
+  fxLayout="row"
+  fxLayoutAlign="start center">
+  <div fxFlex>
+    <app-footer></app-footer>
+  </div>
+</footer>
+</div>
