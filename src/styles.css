@@ -1,7 +1,12 @@
 /* Master Styles */
 
+html, body {
+  height: 100%;
+
+}
+
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
+html is set to 62.5% so that all the REM measurements
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
@@ -70,9 +75,4 @@ nav a.active {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* padding for components */
-.padding-sides-10 {
-  padding: 0px 10px;
 }

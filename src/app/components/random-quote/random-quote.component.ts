@@ -10,6 +10,7 @@ import { QuoteService } from '../../services/quote.service';
 })
 export class RandomQuoteComponent implements OnInit {
   quote: Quote[];
+  public tweetUrl = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=';
 
   constructor(
     private quoteService: QuoteService,
@@ -18,6 +19,9 @@ export class RandomQuoteComponent implements OnInit {
   getQuote(): void {
     this.quoteService.getQuote().then(quote => this.quote = quote);
   }
+
+  
+
 
   ngOnInit(): void {
     this.getQuote();

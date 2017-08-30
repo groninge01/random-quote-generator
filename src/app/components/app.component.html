@@ -1,40 +1,19 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div 
-fxLayout="column"
-fxLayoutAlign="start none" 
-style="flex: 1 1 100%;min-height:100vh;">
-
-<header 
-  class="flex-container"
-  fxLayout="row"
-  fxLayoutAlign="center center">
-  <div fxFlex class="margin-bottom-10">
+<div class="container" fxLayout="column">
+  <header>
     <app-header></app-header>
-  </div>
-</header>
-
-<div class="flex-container" fxFlex fxFlexFill>
-  <div 
-    fxLayout="row"
-    fxLayout.xs="column"
-    class="colored" >
-    <div fxFlex="20" class="padding-sides-10">
-        <app-nav></app-nav>
-    </div>
-    <div fxFlex="60">
+  </header>
+  <div fxLayout="row" fxLayout.xs="column" fxFlex style="margin-top: 25px">
+    <nav fxFlex="1 6 20%">
+      <app-nav></app-nav>
+    </nav>
+    <main fxFlex="3 1 60%">
       <app-randomquote></app-randomquote>
-    </div>
-    <div fxFlex class="padding-sides-10">
+    </main>
+    <aside fxFlex="1 6 20%">
       <app-aside></app-aside>
-    </div>
+    </aside>
   </div>
-</div>
-<footer 
-  class="flex-container"
-  fxLayout="row"
-  fxLayoutAlign="start center">
-  <div fxFlex>
+  <footer>
     <app-footer></app-footer>
-  </div>
-</footer>
+  </footer>
 </div>
