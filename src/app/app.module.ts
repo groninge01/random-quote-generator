@@ -15,17 +15,13 @@ import { RandomQuoteComponent } from './components/random-quote/random-quote.com
 import { QuoteService } from './services/quote.service';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavComponent } from './components/nav/nav.component';
-import { AsideComponent } from './components/aside/aside.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RandomQuoteComponent,
     HeaderComponent,
-    FooterComponent,
-    NavComponent,
-    AsideComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
