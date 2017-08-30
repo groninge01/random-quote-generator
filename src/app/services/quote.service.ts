@@ -1,3 +1,6 @@
+/* Thanks to P1xt for pointing out to use jsonp instead of json because of CORS
+    https://medium.com/@P1xt/fcc-speedrun-random-quote-machine-80fbfa4a8374 */
+
 import { Injectable } from '@angular/core';
 import { JsonpModule, Jsonp, Response, URLSearchParams } from '@angular/http';
 
