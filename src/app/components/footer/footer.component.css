@@ -1,3 +1,6 @@
 * {
     font-size: 1em;
 }
+a:visited, a:link {
+    color:rgba(255, 255, 255, .87);
+}
